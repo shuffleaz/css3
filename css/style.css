@@ -1,0 +1,115 @@
+@import url('../fontawesome/css/all.min.css');
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css'); */
+
+
+html, body {
+    margin:0;
+    padding: 0;
+    font-size:10px; /* Sabit Dəyər */
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    width:80vw;
+    margin:0 auto;
+    margin-top:5rem;
+}
+
+.card-container {
+    padding:2rem;
+}
+
+.card:not(:last-child) {
+    margin-right:1.6rem; /* 2 */
+}
+
+.card {
+    flex:1;
+    border:2px solid rgba(0,0,0,0.3);
+    border-radius:10px;
+    font-size:1.6rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li:not(:last-child) {
+    margin-right:3rem;
+}
+
+.menu ul li {
+    padding:1rem 3rem;
+    background-color: lightcoral;
+    color:white;
+    font-size:1.4rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu ul li:hover {
+    background-color:black;
+}
+
+
+
+@media only screen and (max-width: 375px) {
+    html, body {
+        font-size: 12px !important; 
+    }
+
+    .cards {
+        flex-direction: column !important;
+    }
+
+    .card:not(:last-child) {
+        margin-right:0;
+        margin-bottom:1.6rem;
+    }
+
+    .menu {
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+
+    .menu ul {
+        margin:0;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .menu ul li:not(:last-child) {
+        margin-right:0;
+        margin-bottom:0;
+    }
+
+    .menu ul li:nth-child(even) {
+        background-color: skyblue;
+    }
+
+    .menu ul li:hover {
+        background-color: lightcoral;
+    }
+
+    .menu ul li:nth-child(even):hover {
+        background-color: skyblue;
+    }
+}
+
+
+
+
+.card-example {
+    width: 200vw;
+    height: 20vw;
+    background-color:lightgray;
+    max-width: 20vw; 
+}
